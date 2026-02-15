@@ -49,6 +49,10 @@ async function checkWeather(city) {
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";
     document.querySelector(".pressure").innerHTML = data.main.pressure + " hPa";
+    if (document.querySelector(".min")) {
+      document.querySelector(".min").innerHTML =
+        data.wind.deg !== undefined ? `${data.wind.deg}°` : "N/A";
+    }
 
     const sunrise = new Date(data.sys.sunrise * 1000);
     document.querySelector(".sunrise").innerHTML = sunrise.toLocaleTimeString(
