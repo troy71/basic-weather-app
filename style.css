@@ -333,17 +333,3 @@ svg {
     }
 
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .weather-details {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "min_block max-block"
-            "sunrise-block sunset-block"
-            "rain-block cloud-block";
-        gap: 20px;
-        padding: 30px 0;
-    }
-}
