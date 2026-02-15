@@ -167,12 +167,12 @@ svg {
     outline: none;
     font-size: var(--fs-20);
     color: var(--clr-all-text);
-     text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .search__bar-input::placeholder {
     color: var(--clr-search-bar-text);
-    
+
 }
 
 .search button {
@@ -332,23 +332,18 @@ svg {
         padding: 30px;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
     .weather-details {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "min_block max-block"
             "sunrise-block sunset-block"
             "rain-block cloud-block";
-        padding-block: 0;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .weather-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
         gap: 20px;
-        padding: 30px;
+        padding: 30px 0;
     }
 }
