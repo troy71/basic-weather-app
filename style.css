@@ -342,3 +342,13 @@ svg {
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .weather-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+}
