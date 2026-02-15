@@ -332,4 +332,13 @@ svg {
         padding: 30px;
     }
 
+    .weather-details {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "min_block max-block"
+            "sunrise-block sunset-block"
+            "rain-block cloud-block";
+        padding-block: 0;
+    }
+
 }
