@@ -9,9 +9,9 @@ The project uses a weather API to fetch live data and displays it in a clean, us
 
 Features
 
-Temperature
-Feels like
-Wind speed
+Temperature, 
+Feels like, 
+Wind speed, 
 Humidity
 
 And a few more....
