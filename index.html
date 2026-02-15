@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+    <main class="weather-card ">
+
+        <section class="search flex-helper">
+
+            <h1 class="search__heading">Weather Today</h1>
+
+            <div class="search__content">
+
+                <div class="search__bar flex-helper">
+                    <img src="./images/search-icon.svg" alt="">
+                    <input type="text" name="name" placeholder="Enter city name" spellcheck="false"
+                        class="search__bar-input">
+                </div>
+
+                <div class="error">
+                    <p>City not found, please try again.</p>
+                </div>
+
+                <button class="search_button btn">
+                    Get Weather
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="weather-display flex-helper">
+
+            <div class="weather-info flex-helper">
+
+                <div class="location-info">
+                    <p id="currentDateTime">Monday, June 10, 2023 • 10:30</p>
+                </div>
+                <h2 class="city">London</h2>
+                <h3 class="descrip">Broken clouds</h3>
+                <img src="./images/clouds.png" class="weather-icon" alt="weather icon">
+                <h1 class="temp">6°C</h1>
+                <div class="feels-like flex-helper">
+                    <p class="weather-details__heading">Feels like</p>
+                    <p class="feels">1°C</p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/wind.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Wind</p>
+                        <p class="weather-details__result  wind">10 mph</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/humidity.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Humidity</p>
+                        <p class="weather-details__result humidity">88%</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/compass.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Wind</p>
+                        <p class="weather-details__result min">90</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/raindrop-measure.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Rain</p>
+                        <p class="weather-details__result rain">0 mm</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/sunrise.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Sunrise</p>
+                        <p class="weather-details__result sunrise">50%</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/sunset.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Sunset</p>
+                        <p class="weather-details__result sunset">50%</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/compass.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Pressure</p>
+                        <p class="weather-details__result pressure">1013 hPa</p>
+                    </div>
+                </div>
+
+                <div class="weather-details__data flex-helper">
+                    <img src="./images/cloudy.svg" alt="" width="80" height="80">
+                    <div class="weather-details-content">
+                        <p class="weather-details__heading">Clouds</p>
+                        <p class="weather-details__result cloud">0%</p>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</html>
