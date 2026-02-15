@@ -18,12 +18,13 @@ And a few more....
 
 Desktop
 
-![alt text](<Screenshot 2026-02-15 124226.png>)
+![alt text](<images/Screenshot 2026-02-15 124226.png>)
+
 
 Desktop with error
 
-![alt text](<Screenshot 2026-02-15 124421.png>)
+![alt text](<images/Screenshot 2026-02-15 124421.png>)
 
 Mobile view
 
-![alt text](<Screenshot 2026-02-15 124617-1.png>)
+![alt text](<images/Screenshot 2026-02-15 124617-1.png>)
