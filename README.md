@@ -16,6 +16,13 @@ Humidity
 
 And a few more....
 
+I had used openwaether API. Sign up for an API key
+
+const apiKey = "Enter your API Key here;
+const apiUrl =
+  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+
+
 Desktop
 
 ![alt text](<images/Screenshot 2026-02-15 124226.png>)
