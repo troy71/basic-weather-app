@@ -16,11 +16,22 @@ Humidity
 
 And a few more....
 
-I had used openwaether API. Sign up for an API key
+I use OpenWeather API. Sign up for an API key.
 
-const apiKey = "Enter your API Key here;
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+API key setup (secure)
+
+1. Copy `.env.example` to `.env`
+2. Set your key:
+
+OPENWEATHER_API_KEY=your_real_openweather_api_key
+
+3. Run the app with a PHP server from the project root:
+
+php -S localhost:8000
+
+Then open http://localhost:8000
+
+The key is now read in `weather.php` from the environment and is not stored in frontend JavaScript.
 
 
 Desktop

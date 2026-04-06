@@ -1,7 +1,3 @@
-const apiKey = "Enter your API Key here;
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search_button");
 const weatherIcon = document.querySelector(".weather-icon");
@@ -28,11 +24,17 @@ function updateDateTime() {
 
 async function checkWeather(city) {
   try {
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+    const response = await fetch(`weather.php?city=${encodeURIComponent(city)}`);
+
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+
     const data = await response.json();
 
-    if (data.cod === "404" || data.cod === 404) {
+    if (Number(data.cod) !== 200) {
       document.querySelector(".error").style.display = "block";
+      document.querySelector(".weather-display").style.display = "flex";
       return;
     }
 
@@ -99,6 +101,7 @@ async function checkWeather(city) {
   } catch (error) {
     console.log("Error fetching data:", error);
     document.querySelector(".error").style.display = "block";
+    document.querySelector(".weather-display").style.display = "flex";
   }
 }
 
