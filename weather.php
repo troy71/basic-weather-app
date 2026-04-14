@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json");
 
-$apiKey = "629dc4724c6e8bdf1b2d3d4695a61fc7";
+$apiKey = "Enter API key";
 $city = $_GET["city"] ?? "";
 
 if (!$city) {
